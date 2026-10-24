@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One-Leg Welcome</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --card: rgba(255, 255, 255, 0.08);
+        --text: #f3f5ff;
+        --muted: #c7d2fe;
+        --accent: #7dd3fc;
+        --accent-2: #a78bfa;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(125, 211, 252, 0.2), transparent 35%),
+          linear-gradient(135deg, var(--bg), #111827 60%, #0f172a);
+        color: var(--text);
+      }
+
+      .card {
+        width: min(90vw, 760px);
+        padding: 48px 32px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 24px;
+        background: var(--card);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2.5rem, 5vw, 5rem);
+        line-height: 1.1;
+        letter-spacing: 0.04em;
+      }
+
+      .subtitle {
+        margin: 0;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .highlight {
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Welcome!</h1>
+      <p class="subtitle">
+        I’m <span class="highlight">Amputated Bologna</span> — I’m the guy with one leg.
+      </p>
+    </div>
+  </body>
+</html>
